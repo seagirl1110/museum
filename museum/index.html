@@ -17,12 +17,12 @@
 
 <body>
     <header class="header">
-        <div class="container header-container">
-            <div class="header-container__logo logo">
+        <div class="container container--header">
+            <div class="header__logo logo">
                 <div class="logo__img"></div>
                 <div class="logo__text">Louvre</div>
             </div>
-            <nav class="header-container__nav nav">
+            <nav class="header__nav nav">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#visiting" class="nav__link">Visiting</a></li>
                     <li class="nav__item"><a href="#explore" class="nav__link">Explore</a></li>
@@ -35,32 +35,112 @@
         </div>
     </header>
     <main class="main">
-        <section class="section dark-section welcome-section">
-            <div class="container"><h2 class="section-title"></h2>
-
+        <h1 class="main__title">Museum</h1>
+        <section class="main__section section section--welcome welcome section--dark">
+            <div class="container container--welcome">
+                <h2 class="welcome__title section-title section-title--dark">Welcome
+                    <br>to the Louvre
+                </h2>
+                <p class="welcome__text">From the castle to the museum</p>
+                <a href="#" class="welcome__link" target="_blank">Discover the Louvre</a>
             </div>
         </section>
-        <section class="section visiting-section" id="visiting">
-            <div class="container"></div>
+        <section class="main__section section section--visiting visiting" id="visiting">
+            <div class="container">
+                <h2 class="visiting__title section-title section-title--underline">Virtual tour</h2>
+                <div class="visiting__wrapper">
+                    <a href="#" class="visiting__item visiting-item" target="_blank">
+                        <img src="assets/img/visiting-img--1.jpg" alt="visiting-item-img" class="visiting-item__img"
+                            width="440" height="285">
+                        <h3 class="visiting-item__title">Royal Palace</h3>
+                        <p class="visiting-item__text visiting-item-text visiting-item-text--1">360° Virtual Tour</p>
+                        <p class="visiting-item__text visiting-item-text visiting-item-text--2">Google Street Panorama
+                            View</p>
+                    </a>
+                    <a href="#" class="visiting__item visiting-item" target="_blank">
+                        <img src="assets/img/visiting-img--2.jpg" alt="visiting-item-img" class="visiting-item__img"
+                            width="440" height="285">
+                        <h3 class="visiting-item__title">Denon Wing</h3>
+                        <p class="visiting-item__text visiting-item-text visiting-item-text--1">360° Virtual Tour</p>
+                        <p class="visiting-item__text visiting-item-text visiting-item-text--2">Google Street Panorama
+                            View</p>
+                    </a>
+                    <a href="#" class="visiting__item visiting-item" target="_blank">
+                        <img src="assets/img/visiting-img--3.jpg" alt="visiting-item-img" class="visiting-item__img"
+                            width="440" height="285">
+                        <h3 class="visiting-item__title">Colonnade Perrault</h3>
+                        <p class="visiting-item__text visiting-item-text visiting-item-text--1">360° Virtual Tour</p>
+                        <p class="visiting-item__text visiting-item-text visiting-item-text--2">Google Street Panorama
+                            View</p>
+                    </a>
+                    <a href="#" class="visiting__item visiting-item" target="_blank">
+                        <img src="assets/img/visiting-img--4.jpg" alt="visiting-item-img" class="visiting-item__img"
+                            width="440" height="285">
+                        <h3 class="visiting-item__title">Greek hall</h3>
+                        <p class="visiting-item__text visiting-item-text visiting-item-text--1">360° Virtual Tour</p>
+                        <p class="visiting-item__text visiting-item-text visiting-item-text--2">Google Street Panorama
+                            View</p>
+                    </a>
+                    <a href="#" class="visiting__item visiting-item" target="_blank">
+                        <img src="assets/img/visiting-img--5.jpg" alt="visiting-item-img" class="visiting-item__img"
+                            width="440" height="285">
+                        <h3 class="visiting-item__title">Mona Lisa</h3>
+                        <p class="visiting-item__text visiting-item-text visiting-item-text--1">360° Virtual Tour</p>
+                        <p class="visiting-item__text visiting-item-text visiting-item-text--2">Google Street Panorama
+                            View</p>
+                    </a>
+                    <a href="#" class="visiting__item visiting-item" target="_blank">
+                        <img src="assets/img/visiting-img--6.jpg" alt="visiting-item-img" class="visiting-item__img"
+                            width="440" height="285">
+                        <h3 class="visiting-item__title">Night Palace</h3>
+                        <p class="visiting-item__text visiting-item-text visiting-item-text--1">360° Virtual Tour</p>
+                        <p class="visiting-item__text visiting-item-text visiting-item-text--2">Google Street Panorama
+                            View</p>
+                    </a>
+                </div>
+            </div>
         </section>
-        <section class="section dark-section explore-section" id="explore">
-            <div class="container"></div>
+        <section class="main__section section section--explore explore section--dark" id="explore">
+            <div class="container container--explore">
+                <div class="explore__wrapper">
+                    <h2 class="explore__title section-title section-title--dark section-title--underline">Picture
+                        explore
+                    </h2>
+                    <p class="explore__text">Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of
+                        the Spanish Golden Age.</p>
+                    <p class="explore__text explore-text">It was cleaned in 1984 to remove a
+                        <span class="explore-text__element">"yellow veil"</span>
+                        of dust that had gathered since the previous restoration in the 19th century.
+                    </p>
+                    <p class="explore__text">The cleaning provoked furious protests, not because the picture had been
+                        damaged in any way, but because it looked different.</p>
+                </div>
+                <img src="" alt="" class="explore__img">
+            </div>
         </section>
-        <section class="section video-section" id="video">
-            <div class="container"></div>
+        <section class="main__section section section--video video" id="video">
+            <div class="container">
+                <h2 class="video__title section-title">Video journey</h2>
+            </div>
         </section>
-        <section class="section dark-section gallery-section" id="gallery">
-            <div class="container"></div>
+        <section class="main__section section section--gallery gallery section--dark" id="gallery">
+            <div class="container">
+                <h2 class="gallery__title section-title section-title--dark">Art gallery</h2>
+            </div>
         </section>
-        <section class="section tickets-section" id="tickets">
-            <div class="container"></div>
+        <section class="main__section section section--tickets tickets" id="tickets">
+            <div class="container">
+                <h2 class="tickets__title section-title section-title--underline">Buy tickets</h2>
+            </div>
         </section>
-        <section class="section contacts-section" id="contacts">
-            <div class="container"></div>
+        <section class="main__section section section--contacts contacts" id="contacts">
+            <div class="container">
+                <h2 class="contacts__title section-title section-title--underline">Contacts</h2>
+            </div>
         </section>
     </main>
     <footer class="footer">
-        <div class="container"></div>
+        <div class="container container--footer"></div>
     </footer>
 </body>
 
