@@ -177,14 +177,62 @@
         <section class="main__section section section--tickets tickets" id="tickets">
             <div class="container">
                 <h2 class="tickets__title section-title section-title--underline">Buy tickets</h2>
-                <img src="assets/img/ticket.jpg" alt="tickets-img" class="tickets__img" width="720" height="550">
-                <div class="tickets__inner">
-                    <div class="tickets__type"></div>
-                    <div class="tickets__amount"></div>
+                <div class="tickets__wrapper">
+                    <img src="assets/img/ticket.jpg" alt="tickets-img" class="tickets__img" width="720" height="550">
+                    <div class="tickets__inner">
+                        <div class="tickets__type tickets-type">
+                            <h4 class="tickets-type__title">Ticket Type</h4>
+                            <label class="tickets-type__item tickets-type-item">
+                                <input type="radio" name="tickets-type" value="permanent-exhibition" checked="checked"
+                                    class="tickets-type-item__input">
+                                Permanent exhibition
+                                <span class="tickets-type-item__checkmark"></span>
+                            </label>
+                            <label class="tickets-type__item tickets-type-item">
+                                <input type="radio" name="tickets-type" value="temporary-exhibition"
+                                    class="tickets-type-item__input">
+                                Temporary exhibition
+                                <span class="tickets-type-item__checkmark"></span>
+                            </label>
+                            <label class="tickets-type__item tickets-type-item">
+                                <input type="radio" name="tickets-type" value="combined-admission"
+                                    class="tickets-type-item__input">
+                                Combined Admission
+                                <span class="tickets-type-item__checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="tickets__amount tickets-amount">
+                            <h4 class="tickets-amount__title">Amount</h4>
+                            <div class="tickets-amount__item tickets-amount-item">
+                                <p class="tickets-amount-item__desc">Basic 18+</p>
+                                <div class="tickets-amount-item__inner">
+                                    <button type="button" onclick="this.nextElementSibling.stepDown()"
+                                        class="tickets-amount-item__btn">-</button>
+                                    <input type="number" min="0" max="120" value="1" readonly
+                                        class="tickets-amount-item__num">
+                                    <button type="button" onclick="this.previousElementSibling.stepUp()"
+                                        class="tickets-amount-item__btn">+</button>
+                                </div>
+                            </div>
+                            <div class="tickets-amount__item tickets-amount-item">
+                                <p class="tickets-amount-item__desc">Senior 65+</p>
+                                <div class="tickets-amount-item__inner">
+                                    <button type="button" onclick="this.nextElementSibling.stepDown()"
+                                        class="tickets-amount-item__btn">-</button>
+                                    <input type="number" min="0" max="120" value="1" readonly
+                                        class="tickets-amount-item__num">
+                                    <button type="button" onclick="this.previousElementSibling.stepUp()"
+                                        class="tickets-amount-item__btn">+</button>
+                                </div>
+                            </div>
+                            <p class="tickets-amount__sum">Total € 220</p>
+                            <button type="submit" class="tickets-amount__buy">Buy Now</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <img src="assets/img/panorama.jpg" alt="panorama" class="main__panorama" width="1920" height="400">
+        <div class="main__panorama"></div>
         <section class="main__section section section--contacts contacts" id="contacts">
             <div class="container">
                 <h2 class="contacts__title section-title section-title--underline">Contacts</h2>
@@ -206,8 +254,8 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="footer__wrapper footer__underline">
-            <div class="container container--footer">
+        <div class="container container--footer">
+            <div class="footer__inner">
                 <div class="footer__logo logo">
                     <div class="logo__img"></div>
                     <div class="logo__text">Louvre</div>
@@ -255,9 +303,11 @@
                     </li>
                 </ul>
             </div>
-        </div>
-        <div class="footer__wrapper">
-            <div class="container container--footer"></div>
+            <div class="footer__inner">
+                <div class="footer__item">&copy; 2021</div>
+                <div class="footer__item">The Rolling Scopes School</div>
+                <div class="footer__item">Seagirl1110</div>
+            </div>
         </div>
     </footer>
 </body>
