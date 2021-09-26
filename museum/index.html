@@ -38,11 +38,38 @@
         <h1 class="main__title">Museum</h1>
         <section class="main__section section section--welcome welcome section--dark">
             <div class="container container--welcome">
-                <h2 class="welcome__title section-title section-title--dark">Welcome
-                    <br>to the Louvre
-                </h2>
-                <p class="welcome__text">From the castle to the museum</p>
-                <a href="#" class="welcome__link" target="_blank">Discover the Louvre</a>
+                <div class="welcome__inner">
+                    <h2 class="welcome__title section-title section-title--dark">Welcome
+                        <br>to the Louvre
+                    </h2>
+                    <p class="welcome__text">From the castle to the museum</p>
+                    <a href="#" class="welcome__link" target="_blank">Discover the Louvre</a>
+                </div>
+                <div class="welcome__slider welcome-slider">
+                    <div class="welcome-slider__img"></div>
+                    <div class="welcome-slider__controls slider-controls">
+                        <div class="slider-controls__count slider-controls-count">
+                            <span class="slider-controls-count__current">01</span>
+                            <span class="slider-controls-count__separator">|</span>
+                            <span class="slider-controls-count__total">05</span>
+                        </div>
+                        <div class="slider-controls__switch slider-switch">
+                            <div class="slider-switch__item slider-switch-item slider-switch-item--active"></div>
+                            <div class="slider-switch__item"></div>
+                            <div class="slider-switch__item"></div>
+                            <div class="slider-switch__item"></div>
+                            <div class="slider-switch__item"></div>
+                        </div>
+                        <div class="slider-controls__inner">
+                            <button type="button" class="slider-controls__btn slider-btn slider-btn--pre">
+                                <img src="assets/svg/welcome-slider-pre.svg" alt="slider-btn-pre" class="slider-btn__img" width="30" height="8">
+                            </button>
+                            <button type="button" class="slider-controls__btn slider-btn slider-btn--next">
+                                <img src="assets/svg/welcome-slider-next.svg" alt="slider-btn-pre" class="slider-btn__img" width="30" height="8">
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="main__section section section--visiting visiting" id="visiting">

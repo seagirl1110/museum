@@ -139,10 +139,15 @@ body {
 }
 
 .container--welcome {
-    padding: 150px 20px 272px;
-    background-image: url(assets/img/welcome.jpg);
-    background-repeat: no-repeat;
-    background-position: right 20px top;
+    display: flex;
+    position: relative;
+    padding-bottom: 60px;
+}
+
+.welcome__inner {
+    position: absolute;
+    top: 150px;
+    z-index: 1;
 }
 
 .welcome__title {
@@ -169,6 +174,61 @@ body {
     width: 360px;
     height: 75px;
     margin-top: 75px;
+}
+
+.welcome__slider {
+    margin-left: auto;
+    position: relative;
+}
+
+.welcome-slider__img {
+    width: 1000px;
+    height: 750px;
+    background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.5) 16.19%, rgba(0, 0, 0, 0) 30.73%), url('assets/img/welcome-1.jpg');
+}
+
+.welcome-slider__controls {
+    background-color: #000000;
+    padding: 40px 75px;
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    align-items: center;
+    position: absolute;
+    bottom: -60px;
+    right: 0;
+}
+
+.slider-controls-count {
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+
+.slider-switch {
+    display: flex;
+}
+
+.slider-switch__item {
+    width: 16px;
+    height: 16px;
+    background-color: #FFFFFF;
+    margin-right: 25px;
+}
+
+.slider-switch__item:last-child {
+    margin-right: 0;
+}
+
+.slider-switch-item--active {
+    background-color: #D2B183;
+}
+
+.slider-btn {
+    background-color: transparent;
+    border: none;
+    outline: none;
 }
 
 .visiting__wrapper {
