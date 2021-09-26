@@ -453,9 +453,11 @@ body {
 }
 
 .main__panorama {
-    background-image: url(assets/img/panorama.jpg);
+    background-image: url(assets/img/parallax.jpg);
     height: 400px;
     width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .contacts__wrapper {

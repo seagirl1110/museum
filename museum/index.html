@@ -126,7 +126,9 @@
                         masterpieces such as Mona Lisa or Hammurabi's Code</p>
                 </div>
                 <article class="video__player">
-                    <video src="assets/video/video.mp4" poster="assets/video/video-player-poster.jpg" controls></video>
+                    <video src="assets/video/video.mp4" poster="assets/video/video-player-poster.jpg" controls>
+                        <button class="video-slider-item__btn"></button>
+                    </video>
                 </article>
                 <article class="video__slider video-slider">
                     <div class="video-slider__inner">
@@ -207,8 +209,8 @@
                                 <p class="tickets-amount-item__desc">Basic 18+</p>
                                 <div class="tickets-amount-item__inner">
                                     <button type="button" onclick="this.nextElementSibling.stepDown()"
-                                        class="tickets-amount-item__btn">-</button>
-                                    <input type="number" min="0" max="120" value="1" readonly
+                                        class="tickets-amount-item__btn">–</button>
+                                    <input type="number" min="0" max="20" value="1" readonly
                                         class="tickets-amount-item__num">
                                     <button type="button" onclick="this.previousElementSibling.stepUp()"
                                         class="tickets-amount-item__btn">+</button>
@@ -218,8 +220,8 @@
                                 <p class="tickets-amount-item__desc">Senior 65+</p>
                                 <div class="tickets-amount-item__inner">
                                     <button type="button" onclick="this.nextElementSibling.stepDown()"
-                                        class="tickets-amount-item__btn">-</button>
-                                    <input type="number" min="0" max="120" value="1" readonly
+                                        class="tickets-amount-item__btn">–</button>
+                                    <input type="number" min="0" max="20" value="1" readonly
                                         class="tickets-amount-item__num">
                                     <button type="button" onclick="this.previousElementSibling.stepUp()"
                                         class="tickets-amount-item__btn">+</button>
