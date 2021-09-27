@@ -61,11 +61,13 @@
                             <div class="slider-switch__item"></div>
                         </div>
                         <div class="slider-controls__inner">
-                            <button type="button" class="slider-controls__btn slider-btn slider-btn--pre">
-                                <img src="assets/svg/welcome-slider-pre.svg" alt="slider-btn-pre" class="slider-btn__img" width="30" height="8">
+                            <button type="button" class="slider-controls__btn slider-btn slider-btn--pre btn--clear">
+                                <img src="assets/svg/welcome-slider-pre.svg" alt="slider-btn-pre"
+                                    class="slider-btn__img" width="30" height="8">
                             </button>
-                            <button type="button" class="slider-controls__btn slider-btn slider-btn--next">
-                                <img src="assets/svg/welcome-slider-next.svg" alt="slider-btn-pre" class="slider-btn__img" width="30" height="8">
+                            <button type="button" class="slider-controls__btn slider-btn slider-btn--next btn--clear">
+                                <img src="assets/svg/welcome-slider-next.svg" alt="slider-btn-pre"
+                                    class="slider-btn__img" width="30" height="8">
                             </button>
                         </div>
                     </div>
@@ -152,22 +154,59 @@
                     <p class="video__text">Enter and visit one of the most famous museums in the world and enjoy
                         masterpieces such as Mona Lisa or Hammurabi's Code</p>
                 </div>
-                <article class="video__player">
-                    <video src="assets/video/video.mp4" poster="assets/video/video-player-poster.jpg" controls>
-                        <button class="video-slider-item__btn"></button>
-                    </video>
+                <article class="video__player video-player">
+                    <video src="assets/video/video.mp4" poster="assets/video/video-player-poster.jpg"
+                        class="video-player__video"></video>
+                    <button type="button" class="video-player__btn btn--clear"></button>
+                    <div class="video-player__panel video-player-panel">
+                        <button type="button" class="video-player-panel__play btn--clear">
+                            <img src="assets/svg/video-player-panel-play.svg" alt="video-player-panel-btn-play"
+                                class="video-player-panel__btn-play" width="23" height="31">
+                        </button>
+                        <input type="range" value="54" min="0" max="100" step="1"
+                            class="video-player-panel__progress video-player-range">
+                        <div class="video-player-panel__volume video-player-volume">
+                            <button type="button" class="video-player-volume__btn btn--clear">
+                                <img src="assets/svg/video-player-volume-btn.svg" alt="video-player-volume-btn"
+                                    class="video-player-volume__btn-img">
+                            </button>
+                            <input type="range" value="43" min="0" max="100" step="1"
+                                class="video-player-volume__level video-player-range">
+                        </div>
+                        <button type="button" class="video-player-panel__full-screen btn--clear">
+                            <img src="assets/svg/video-player-full-screen.svg" alt="video-player-full-screen-btn"
+                                class="video-player-panel__btn-full-screen" width="35" height="35">
+                        </button>
+                    </div>
                 </article>
                 <article class="video__slider video-slider">
-                    <div class="video-slider__inner">
+                    <div class="video-slider__list">
                         <article class="video-slider__item video-slider-item video-slider-item--1">
-                            <button class="video-slider-item__btn"></button>
+                            <button type="button" class="video-slider-item__btn btn--clear"></button>
                         </article>
                         <article class="video-slider__item video-slider-item video-slider-item--2">
-                            <button class="video-slider-item__btn"></button>
+                            <button type="button" class="video-slider-item__btn btn--clear"></button>
                         </article>
                         <article class="video-slider__item video-slider-item video-slider-item--3">
-                            <button class="video-slider-item__btn"></button>
+                            <button type="button" class="video-slider-item__btn btn--clear"></button>
                         </article>
+                    </div>
+                    <div class="video-slider__controls slider-controls">
+                        <button type="button" class="slider-controls__btn slider-btn slider-btn--pre btn--clear">
+                            <img src="assets/svg/video-slider-pre.svg" alt="slider-btn-pre" class="slider-btn__img"
+                                width="10" height="12">
+                        </button>
+                        <div class="slider-controls__switch slider-switch slider-switch--video">
+                            <div class="slider-switch__item slider-switch-item slider-switch-item--active"></div>
+                            <div class="slider-switch__item"></div>
+                            <div class="slider-switch__item"></div>
+                            <div class="slider-switch__item"></div>
+                            <div class="slider-switch__item"></div>
+                        </div>
+                        <button type="button" class="slider-controls__btn slider-btn slider-btn--next btn--clear">
+                            <img src="assets/svg/video-slider-next.svg" alt="slider-btn-pre" class="slider-btn__img"
+                                width="10" height="12">
+                        </button>
                     </div>
                 </article>
             </div>
@@ -255,7 +294,7 @@
                                 </div>
                             </div>
                             <p class="tickets-amount__sum">Total € 220</p>
-                            <button type="submit" class="tickets-amount__buy">Buy Now</button>
+                            <button type="submit" class="tickets-amount__buy btn--clear">Buy Now</button>
                         </div>
                     </div>
                 </div>
@@ -339,6 +378,7 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
