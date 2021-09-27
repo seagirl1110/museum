@@ -738,9 +738,12 @@ body {
 
 .contacts__item {
     margin: 25px 0 0;
+    display: block;
+    text-decoration: none;
+    color: #000000;
 }
 
-.contacts__item:first-of-type {
+.contacts-item--address {
     margin-top: 50px;
 }
 
