@@ -1,2 +1,2 @@
-# seagirl1110-JSFE2021Q3
-Private repository for @seagirl1110
+My study project - Museum 
+https://www.figma.com/file/xkP6mIaq7uG1Uru7CpasXq/Museum-04.09
